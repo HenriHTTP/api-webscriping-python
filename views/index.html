@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="../public/css/styles.css" />
+    <title>Genetor fake data register csv</title>
+  </head>
+  <body>
+    <div class="m-auto flex flex-col text-gray-500 p-3">
+      <label class="text-md p-2">
+        <i class="fa-solid fa-file"></i>
+        file name
+      </label>
+      <input
+        type="text"
+        name="name-csv"
+        id="name-csv"
+        placeholder="write on here the csv file name"
+        class="p-2 text-md text-gray-500 rounded-lg"
+      />
+      <label for="amount" class="text-md p-2">
+        <i class="fa-solid fa-cash-register"></i>
+        register number
+      </label>
+      <input
+        type="number"
+        id="amount"
+        min="1"
+        value="0"
+        class="appearance-none p-2 text-md text-gray-500 rounded-lg"
+      />
+    </div>
+    <div class="w-full flex justify-center flex-col p-2">
+      <div class="m-auto flex flex-col w-full justify-around text-gray-500">
+        <label class="p-2">
+          <input type="checkbox" value="id" />
+          <i class="fa-solid fa-arrow-up-wide-short"></i>
+          ID
+        </label>
+        <label class="p-2">
+          <input type="checkbox" value="name" />
+          <i class="fa-solid fa-user"></i>
+          name
+        </label>
+        <label class="p-2">
+          <input type="checkbox" value="addreass" />
+          <i class="fa-solid fa-house"></i>
+          addreass
+        </label>
+        <label class="p-2">
+          <input type="checkbox" value="email" />
+          <i class="fa-solid fa-envelope"></i>
+          email
+        </label>
+        <label class="p-2">
+          <input type="checkbox" value="phone_number" />
+          <i class="fa-solid fa-phone"></i>
+          phone number
+        </label>
+        <label class="p-2">
+          <input type="checkbox" value="birthdate" />
+          <i class="fa-solid fa-cake-candles"></i>
+          birthdate
+        </label>
+        <label class="p-2">
+          <input type="checkbox" value="company" />
+          <i class="fa-solid fa-building"></i>
+          company
+        </label>
+        <label class="p-2">
+          <input type="checkbox" value="city" />
+          <i class="fa-solid fa-city"></i>
+          city
+        </label>
+        <label class="p-2">
+          <input type="checkbox" value="country" />
+          <i class="fa-solid fa-flag"></i>
+          country
+        </label>
+      </div>
+    </div>
+    <div class="w-full flex justify-center text-md flex-row p-2">
+      <button
+        id="run-python-btn"
+        class="bg-gray-600 text-gray-200 p-2 text-md rounded-lg transition-opacity duration-300 hover:opacity-90"
+      >
+        <i class="fa-solid fa-arrow-right"></i>
+        Execute
+      </button>
+    </div>
+
+    <div>
+      <h1 class="text-gray-500 text-center p-2 text-md">Terminal</h1>
+      <div class="flex flex-row w-full p-2 justify-center">
+        <label
+          id="output"
+          class="border-gray-500 m-auto w-3/4 p-2 text-center text-gray-500"
+        ></label>
+      </div>
+    </div>
+    <script src="../components/renderer/renderer.js"></script>
+  </body>
+</html>
