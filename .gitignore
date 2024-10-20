@@ -27,9 +27,6 @@ htmlcov/
 
 #csv
 exemple.csv
-# Logs
-logs
-*.log
 
 # Dependency directories
 node_modules/
