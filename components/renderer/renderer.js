@@ -10,7 +10,7 @@ document.getElementById('run-python-btn').addEventListener('click', () => {
   const file_name = document.getElementById('name-csv').value;
   const args = `"${selectedFields.join(',')}" ${amount} ${file_name}`;
   document.getElementById('output').innerHTML =
-    '<img src="./public/img/loading.gif" alt="Loading..." style="width: 50px; height: 50px; margin:auto;">';
+    '<img src="../public/img/loading.gif" alt="Loading..." style="width: 50px; height: 50px; margin:auto;">';
   console.log(args);
   ipcRenderer.send('run-python', args);
 });
