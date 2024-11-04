@@ -22,5 +22,5 @@ if __name__ == "__main__":
     if is_csv:
         generate_csv(data, file_name)
     is_json: bool = format_file == "json"
-    if is_json
+    if is_json:
         json_data_generator(data, file_name)
