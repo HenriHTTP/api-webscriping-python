@@ -17,8 +17,10 @@ if __name__ == "__main__":
     amount: int = int(sys.argv[2])
     file_name: str = str(sys.argv[3])
     format_file: str = str(sys.argv[4])
-    data = list_data_generator(list_fields, amount)
-    if format_file == "csv":
+    data: list = list_data_generator(list_fields, amount)
+    is_csv: bool = format_file == "csv"
+    if is_csv:
         generate_csv(data, file_name)
-    if format_file == "json":
+    is_json: bool = format_file == "json"
+    if is_json
         json_data_generator(data, file_name)
